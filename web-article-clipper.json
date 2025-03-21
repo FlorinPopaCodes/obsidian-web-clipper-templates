@@ -1,0 +1,46 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Web Article",
+	"behavior": "overwrite",
+	"noteContentFormat": "# Summary\n{{\"a bullet point summary\"}}\n\n# Concepts\n{{\"Improved Concept Extraction PromptAnalyze the provided text and extract only meaningful atomic concepts (self-contained, individual ideas) that are non-trivial and require deliberate memorization. Skip obvious, self-explanatory, or easily memorable concepts. Focus on insights, principles, frameworks, and mental models that would provide value if internalized, not simple facts or common knowledge. For each concept: (1) create a concise, searchable title in double brackets [[Like This]] for Obsidian linking, (2) state the concept clearly in 1-2 sentences using plain language, (3) include a brief \"Why it matters:\" section in italics explaining its non-obvious nature and practical value, and (4) number each concept for reference. Prioritize depth over quantity - extract only the most insightful concepts (typically 3-7 per text). Use simple language that would be clear to your future self without context. Format as Obsidian Markdown with no main heading. If no concepts meet these criteria, simply state that no meaningful atomic concepts were found.\"}}\n\n# Clipped Content\n\n{{content}}",
+	"properties": [
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "original_title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "description",
+			"value": "{{\\\"a short description, 200 characters\\\"}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings, {{\\\"3-7 tags about this page, comma separated, kebab cased\\\"}}",
+			"type": "multitext"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "_literature/_web/"
+}
