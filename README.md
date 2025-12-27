@@ -1,3 +1,5 @@
+# Moved to obsidian vault
+
 Extension source: https://github.com/obsidianmd/obsidian-clipper
 Documentation: https://help.obsidian.md/web-clipper
 
